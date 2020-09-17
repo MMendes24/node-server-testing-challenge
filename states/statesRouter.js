@@ -30,7 +30,7 @@ router.post('/', (req, res) => {
         res.status(201).json(thenRes)
     })
     .catch(err => {
-        res.status(500).json({ error: 'Internal Server Error.'})
+        res.status(400).json({ error: 'Bad data'})
     })
 })
 
