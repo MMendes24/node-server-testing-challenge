@@ -39,11 +39,11 @@ describe('server', () => {
                 .delete(`/api/states/${doomedState.id}`)
                 .then(res => {
                     expect(res.status).toBe(200)
-            })
+                })
         })
         it('should never find Canada because Canada is not a state', async () => {
             const states = await db('states')
-            expect(states).toHaveLength(1)         
+            expect(states).toHaveLength(1)
         })
     })
 })
