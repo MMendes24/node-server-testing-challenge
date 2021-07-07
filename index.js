@@ -1,0 +1,5 @@
+const server = require('./api/server');
+
+server.listen(8000, () => {
+  console.log('We hear you New Orleans');
+});
